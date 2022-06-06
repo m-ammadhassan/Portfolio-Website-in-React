@@ -1,14 +1,14 @@
-.navigation-bar .navbar
+.navigation .navbar
 {
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-.navigation-bar .navbar .navbar-nav a
+.navigation .navbar .navbar-nav a
 {
     color: whitesmoke;
 }
 
-.navigation-bar .navbar .navbar-nav a.active
+.navigation .navbar .navbar-nav a.active
 {
     color: skyblue;
 }

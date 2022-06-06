@@ -5,12 +5,12 @@ import {Container, Nav, Navbar} from 'react-bootstrap';
 function NavigationBar()
 {
     return(
-        <section className="navigation-bar">
-            <Navbar bg="dark" expand="md" className="fixed-top">
+        <section className="navigation">
+            <Navbar bg="dark" expand="md" className="fixed-top" id="nav">
                 <Container className="py-2 px-4 px-sm-0">
 
                     {/* Navigation Bar Title */}
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="#home" className="me-0">
                         <h1>
                             Portfo<span>lio.</span>
                         </h1>
