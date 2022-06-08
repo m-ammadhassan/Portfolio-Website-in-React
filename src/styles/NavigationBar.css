@@ -1,6 +1,30 @@
 .navigation .navbar
 {
     background-color: rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.navigation .navbar .navbar-brand h1
+{
+    color: #dfe6e9;
+}
+
+.navigation .navbar .navbar-brand h1 span
+{
+    color: #0abde3;
+}
+
+.navigation .navbar .navbar-toggler
+{
+    border: 0;
+    color: #dfe6e9 !important;
+}
+
+.navigation .navbar .navbar-toggler:focus
+{
+    box-shadow: none;
 }
 
 .navigation .navbar .navbar-nav a

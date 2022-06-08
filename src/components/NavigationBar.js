@@ -6,7 +6,7 @@ function NavigationBar()
 {
     return(
         <section className="navigation">
-            <Navbar bg="dark" expand="md" className="fixed-top" id="nav">
+            <Navbar bg="dark" expand="md" id="nav" fixed="top">
                 <Container className="py-2 px-4 px-sm-0">
 
                     {/* Navigation Bar Title */}
@@ -17,7 +17,9 @@ function NavigationBar()
                     </Navbar.Brand>
 
                     {/* Navigation Bar Collapse */}
-                    <Navbar.Toggle aria-controls="basic-navbar"/>
+                    <Navbar.Toggle aria-controls="basic-navbar">
+                        <div className="menu-btn"></div>
+                    </Navbar.Toggle>
 
                     {/* Navigation Bar Menu */}
                     <Navbar.Collapse id="basic-navbar">
