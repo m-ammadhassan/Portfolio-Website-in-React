@@ -29,11 +29,11 @@ function NavigationBar()
                     <Navbar.Collapse id="basic-navbar">
                         <Nav className="ms-auto mt-3 mt-lg-0 text-center">
                             <Nav.Link href="#home" className="mx-lg-2 active">Home</Nav.Link>
-                            <Nav.Link href="" className="mx-lg-2">About</Nav.Link>
-                            <Nav.Link href="" className="mx-lg-2">Skills</Nav.Link>
-                            <Nav.Link href="" className="mx-lg-2">Work</Nav.Link>
-                            <Nav.Link href="" className="mx-lg-2">Services</Nav.Link>
-                            <Nav.Link href="" className="mx-lg-2">Contact</Nav.Link>
+                            <Nav.Link href="#about" className="mx-lg-2">About</Nav.Link>
+                            <Nav.Link href="#skills" className="mx-lg-2">Skills</Nav.Link>
+                            <Nav.Link href="#work" className="mx-lg-2">Work</Nav.Link>
+                            <Nav.Link href="#services" className="mx-lg-2">Services</Nav.Link>
+                            <Nav.Link href="#contact" className="mx-lg-2">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 
