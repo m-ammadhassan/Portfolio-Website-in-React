@@ -18,17 +18,17 @@ function About()
                 </Row>
 
                 <Row className="py-4 align-items-center">
-                    <Col md={6} className="text-center">
+                    <Col lg={6} className="text-center about-image">
                         <Image src={MyImage} width={300} fluid/>
                     </Col>
 
-                    <Col md={6} className="px-4">
+                    <Col lg={6} className="px-4 about-content mt-4 mt-lg-0">
                         <p className="mb-0" style={{textAlign: "justify"}}>
                         My name is Muhammad Ammad Hassan and I am based in Lahore, Pakistan. I have completed my graudation in Software Engineering from The University of Faisalabad.</p>
 
                         <q className="text-center d-block my-4">
                             <em className="">
-                                I love to code and It is my passion to develop beautiful websites
+                                It is my passion to code and I always love to develop beautiful websites.
                             </em>
                         </q>
 
