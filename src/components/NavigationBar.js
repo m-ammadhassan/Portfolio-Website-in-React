@@ -28,7 +28,7 @@ function NavigationBar()
                     {/* Navigation Bar Menu */}
                     <Navbar.Collapse id="basic-navbar">
                         <Nav className="ms-auto mt-3 mt-lg-0 text-center">
-                            <Nav.Link href="" className="mx-lg-2 active">Home</Nav.Link>
+                            <Nav.Link href="#home" className="mx-lg-2 active">Home</Nav.Link>
                             <Nav.Link href="" className="mx-lg-2">About</Nav.Link>
                             <Nav.Link href="" className="mx-lg-2">Skills</Nav.Link>
                             <Nav.Link href="" className="mx-lg-2">Work</Nav.Link>
