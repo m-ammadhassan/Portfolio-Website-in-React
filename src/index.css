@@ -21,20 +21,15 @@ code {
 
 ::-webkit-scrollbar
 {
-    width: 0.4rem;
+    width: 0.3rem;
 }
 
 ::-webkit-scrollbar-track
 {
-    background-color: #0abde3;
-    background-color: #feca57;
     background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb
 {
-    background-color: #f5f5f5;
-    background-color: #feca57;
     background-color: #0abde3;
-
 }
