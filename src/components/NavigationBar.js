@@ -8,7 +8,7 @@ function NavigationBar()
 {
     return(
         <section className="navigation">
-            <Navbar bg="dark" expand="lg" id="nav" fixed="top">
+            <Navbar expand="lg" id="nav" fixed="top">
                 <Container className="py-2 px-4 px-sm-0">
 
                     {/* Navigation Bar Title */}
