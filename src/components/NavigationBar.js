@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../styles/NavigationBar.css'
 import {Container, Nav, Navbar} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCircleChevronDown} from '@fortawesome/free-solid-svg-icons';
+import {useNavigationScroll} from '../custom_hooks/useNavigationScroll';
 
 function NavigationBar()
 {
+    useNavigationScroll();
+
     return(
+        // Navigation Bar Starts Here
         <section className="navigation">
-            <Navbar expand="lg" id="nav" fixed="top">
+            <Navbar expand="lg" fixed="top">
                 <Container className="py-2 px-4 px-sm-0">
 
                     {/* Navigation Bar Title */}
@@ -40,6 +44,7 @@ function NavigationBar()
                 </Container>
             </Navbar>
         </section>
+        // Navigation Bar Ends Here
     );
 }
 
