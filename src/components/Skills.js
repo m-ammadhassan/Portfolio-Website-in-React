@@ -1,6 +1,8 @@
 import React from 'react';
+import SkillBars from './SkillBars';
 import '../styles/Default.css';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import '../styles/Skills.css';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function Skills()
 {
@@ -15,7 +17,8 @@ function Skills()
                     </Col>
                 </Row>
 
-                <Row className="py-4">
+                <Row>
+                    <SkillBars />
                 </Row>
             </Container>
         </section>
