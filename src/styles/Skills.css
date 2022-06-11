@@ -8,6 +8,18 @@
     color: #dfe6e9;
 }
 
-.skill-bar{
+.skill-data h3
+{
     color: #dfe6e9;
+    font-size: 1.25rem;
+}
+
+.skill-progress
+{
+    height: 0.5rem;
+}
+
+.skill-progress .progress-bar
+{
+    background-color: #0abde3;
 }
