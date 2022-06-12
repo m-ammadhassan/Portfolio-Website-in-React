@@ -10,8 +10,8 @@ function Services()
 
                 <Row className="py-3 section-head text-center">
                     <Col>
-                        <h2>Service</h2>
-                        <h5>What I Provide?</h5>
+                        <h2>Services</h2>
+                        <h5>What I Can Do?</h5>
                     </Col>
                 </Row>
 
