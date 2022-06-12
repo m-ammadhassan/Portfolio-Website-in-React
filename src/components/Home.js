@@ -1,6 +1,7 @@
 import React from 'react';
+import '../styles/Default.css';
 import '../styles/Home.css';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import DeveloperImage from '../assets/images/developer.png';
 
 
@@ -16,6 +17,11 @@ function Home()
                         <h1>Muhammad Ammad Hassan</h1>
                         <h4>And I'm a <span className="d-md-block d-lg-inline">Frontend Web Developer</span>
                         </h4>
+
+                        <div className="mt-4 d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start">
+                            <Button href="#contact" as="a" className="main-btn primary-btn me-sm-3">Contact Me</Button>
+                            <Button href="" as="a" className="main-btn secondary-btn mt-3 mt-sm-0">Hire Me</Button>
+                        </div>
                     </Col>
 
                     <Col sm={8} md={6} lg={5} className="home-image text-center">
