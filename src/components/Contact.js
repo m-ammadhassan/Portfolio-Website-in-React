@@ -11,7 +11,7 @@ function Contact()
                 <Row className="py-3 section-head text-center">
                     <Col>
                         <h2>Contact ME</h2>
-                        <h5>Any Query?</h5>
+                        <h5>Have Any Query?</h5>
                     </Col>
                 </Row>
 
