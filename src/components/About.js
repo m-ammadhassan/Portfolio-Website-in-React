@@ -1,8 +1,9 @@
 import React from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import '../styles/About.css';
 import '../styles/Default.css';
 import MyImage from '../assets/images/profile-pic.png';
+import MuhammadAmmadHassanResume from '../assets/docs/Muhammad Ammad Hassan Resume.pdf';
 
 function About()
 {
@@ -27,7 +28,7 @@ function About()
                         My name is Muhammad Ammad Hassan and I am based in Lahore, Pakistan. I have completed my graudation in Software Engineering from The University of Faisalabad.</p>
 
                         <q className="text-center d-block my-4">
-                            <em className="">
+                            <em>
                                 It is my passion to code and I always love to develop beautiful websites.
                             </em>
                         </q>
@@ -35,6 +36,8 @@ function About()
                         <p className="mb-0" style={{textAlign: "justify"}}>
                         I have skills to create an attractive and user-friendly Frontend of the website. My goal is to become MERN Stack Developer and Cloud Computing Engineer. I have also interest in Flutter. I can easily work in groups/teams and always take part in the activities that enhances my knowledge and skills.
                         </p>
+
+                        <Button className="main-btn primary-btn mt-3" href={MuhammadAmmadHassanResume} as="a" download={MuhammadAmmadHassanResume}>Download CV</Button>
                     </Col>
                 </Row>
             </Container>
