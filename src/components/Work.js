@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import '../styles/Default.css';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import '../styles/Work.css';
+import { Card, Col, Container, Nav, Row, Tab } from 'react-bootstrap';
+import WorkCard from './WorkCard';
+
 
 function Work()
 {
@@ -15,7 +18,10 @@ function Work()
                     </Col>
                 </Row>
 
-                <Row className="py-4">
+                <Row className="py-4 justify-content-center">
+
+                    <WorkCard />
+
                 </Row>
             </Container>
         </section>
