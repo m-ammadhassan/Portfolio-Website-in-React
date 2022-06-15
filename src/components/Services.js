@@ -1,6 +1,8 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import ServiceCard from './ServiceCard';
 import '../styles/Default.css';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import '../styles/Services.css';
 
 function Services()
 {
@@ -15,8 +17,8 @@ function Services()
                     </Col>
                 </Row>
 
-                <Row className="py-4">
-                </Row>
+                <ServiceCard />
+
             </Container>
         </section>
     );
