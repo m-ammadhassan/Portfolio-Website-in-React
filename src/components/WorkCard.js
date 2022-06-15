@@ -14,7 +14,7 @@ function WorkCard()
             id: 0,
             projectName: "",
             projectDetails: "",
-            projectTechnologies: ["dummySkill", "dummySkill"],
+            projectTechnologies: ["", ""],
             imageURL: "",
             githubURL: "",
             hostURL: ""
