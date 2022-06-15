@@ -10,7 +10,7 @@
 
 .work-card .card span, .modal-content .card span
 {
-    width: 102%;
+    width: 100%;
     height: 100%;
     background-position: top center;
     background-size: cover;
@@ -142,6 +142,11 @@
 {
     background-color: #222f3e;
     color: #0abde3;
+}
+
+.modal-content .modal-body .technologies h6:last-child
+{
+    display: none;
 }
 
 .modal-content .modal-body .buttons .main-btn:hover
