@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Button, Card, Col, Container, Modal, Row} from 'react-bootstrap';
 import '../styles/Default.css';
 import '../styles/Work.css';
 
 function WorkModal(props)
 {
-    let skills = props.tech;
+    let a = props.tech;
+
+    let projectSkills = ((a == undefined) ? [""] : a);
 
     return(
         <Modal show={props.show} onHide={props.hide} size="lg" centered>
@@ -34,12 +36,12 @@ function WorkModal(props)
                             
                             <div className="technologies d-flex flex-wrap justify-content-center">
                                 {
-                                    skills.map(skill=>{
-                                        return(
-                                            <h6 className="mx-2">{skill}</h6>
-                                        );
+                                    projectSkills.map( (skill, id)=>{
+                                        return <h6 className="mx-2" key={id}>{skill}</h6>
                                     })
                                 }
+                                <h6 className="mx-2">{}</h6>
+
                             </div>
 
                             <div className="buttons d-flex flex-wrap justify-content-evenly mt-xs-3">
