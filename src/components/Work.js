@@ -18,7 +18,7 @@ function Work()
                     </Col>
                 </Row>
 
-                <Row className="py-4 justify-content-center">
+                <Row className="pt-4 justify-content-center">
 
                     <WorkCard />
 
