@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { Card, Col, Row } from 'react-bootstrap';
 import ServicesContext from '../contexts/servicesContext';
 import '../styles/Default.css';
@@ -11,7 +10,7 @@ function ServiceCard()
     let servicesList = useContext(ServicesContext);
 
     return(
-        <Row xs={1} md={2} lg={3} className="service-cards g-4 mt-2 text-center">
+        <Row xs={1} md={2} lg={3} className="service-cards g-4 mt-2 text-center pb-5">
             {
                 servicesList.map( (service, id)=>{
                     return(
