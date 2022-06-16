@@ -3,10 +3,13 @@ import '../styles/Default.css';
 import '../styles/Home.css';
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import DeveloperImage from '../assets/images/developer.png';
+import {useButtonColorRemover} from '../custom_hooks/useButtonColorRemover';
 
 
 function Home()
 {
+    useButtonColorRemover();
+
     return(
         <section className="home" id="home">
             <Container className="py-5">
@@ -18,13 +21,17 @@ function Home()
                         <h4>And I'm a <span className="d-md-block d-lg-inline">Frontend Web Developer</span>
                         </h4>
 
-                        <div className="mt-4 d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start">
-                            <Button href="#contact" as="a" className="main-btn primary-btn me-sm-3">Contact Me</Button>
-                            <Button href="" as="a" className="main-btn secondary-btn mt-3 mt-sm-0">Hire Me</Button>
+                        <div className="d-flex flex-wrap justify-content-evenly justify-content-lg-start mt-sm-4">
+                            <Button href="#contact" as="a" className="main-btn primary-btn mx-1 ms-lg-0 me-lg-3 mt-3 mt-sm-0">
+                                Contact Me
+                            </Button>
+                            <Button href="" as="a" className="main-btn secondary-btn submit-btn mx-1 ms-lg-0 mt-3 mt-sm-0">
+                                Hire Me
+                            </Button>
                         </div>
                     </Col>
 
-                    <Col sm={8} md={6} lg={5} className="home-image text-center">
+                    <Col xs={10} sm={9} md={7} lg={5} className="home-image text-center">
                         <Image src={DeveloperImage} fluid />
                     </Col>
                 </Row>
