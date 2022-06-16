@@ -11,7 +11,7 @@ function About()
         <section className="about" id="about">
             <Container className="py-5">
 
-                <Row className="py-3 section-head text-center">
+                <Row className="py-3 mt-5 section-head text-center">
                     <Col>
                         <h2>About ME</h2>
                         <h5>Who I Am?</h5>
@@ -19,7 +19,7 @@ function About()
                 </Row>
 
                 <Row className="py-4 align-items-center">
-                    <Col lg={6} className="text-center about-image">
+                    <Col sm={8} lg={6} className="about-image mx-auto mx-lg-0 text-center">
                         <Image src={MyImage} width={300} fluid/>
                     </Col>
 
@@ -37,7 +37,8 @@ function About()
                         I have skills to create an attractive and user-friendly Frontend of the website. My goal is to become MERN Stack Developer and Cloud Computing Engineer. I have also interest in Flutter. I can easily work in groups/teams and always take part in the activities that enhances my knowledge and skills.
                         </p>
 
-                        <Button className="main-btn primary-btn mt-3" href={MuhammadAmmadHassanResume} as="a" download={MuhammadAmmadHassanResume}>Download CV</Button>
+                        <Button className="main-btn primary-btn d-block mt-3 mx-auto mx-lg-0" href={MuhammadAmmadHassanResume} as="a" download={MuhammadAmmadHassanResume}>Download CV</Button>
+
                     </Col>
                 </Row>
             </Container>
