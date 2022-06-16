@@ -10,7 +10,7 @@ function Services()
         <section className="services" id="services">
             <Container className="py-5">
 
-                <Row className="py-3 section-head text-center">
+                <Row className="py-3 mt-5 section-head text-center">
                     <Col>
                         <h2>Services</h2>
                         <h5>What I Can Do?</h5>
