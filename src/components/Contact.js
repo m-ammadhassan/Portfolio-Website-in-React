@@ -19,7 +19,7 @@ function Contact()
                 </Row>
 
                 <Row className="py-4 justify-content-between">
-                    <Col sm={11} md={9} lg={5} className="mx-auto mx-lg-0">
+                    <Col sm={9} md={7} lg={5} className="mx-auto mx-lg-0">
                         <Image src={ContactImage} fluid />
                     </Col>
 
