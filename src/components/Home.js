@@ -25,7 +25,7 @@ function Home()
                             <Button href="#contact" as="a" className="main-btn primary-btn mx-1 ms-lg-0 me-lg-3 mt-3 mt-sm-0">
                                 Contact Me
                             </Button>
-                            <Button href="" as="a" className="main-btn secondary-btn submit-btn mx-1 ms-lg-0 mt-3 mt-sm-0">
+                            <Button href="" as="a" className="main-btn secondary-btn hire-btn mx-1 ms-lg-0 mt-3 mt-sm-0">
                                 Hire Me
                             </Button>
                         </div>
