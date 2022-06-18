@@ -1,15 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import {Button, Col, Form, Row} from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
 import formValidate from '../validations/formValidate';
 import {useButtonColorRemover} from '../custom_hooks/useButtonColorRemover';
+import ContactFormModal from './ContactFormModal';
 
 
 function ContactForm()
 {
     useButtonColorRemover();
 
+    const form = useRef();
+
     let initialFormValues = {firstName: "", lastName: "", email: "", message: ""}
     let [formValues, setFormValues] = useState(initialFormValues);
+    let [contactModal, setContactModal] = useState(false);
 
     function formValuesChange(event)
     {
@@ -33,7 +38,35 @@ function ContactForm()
             {
                 return { firstName: lastValue.firstName, lastName: lastValue.lastName, email: lastValue.email, message: fieldValue}
             }
-        } )
+        } );
+    }
+
+    
+
+    function sendForm()
+    {
+        emailjs.sendForm('service_m44u7od', 'template_rzhps2k', form.current, 'IAq6HwhbRruF2vk59')
+        .then(
+            (result)=>{
+                console.log(result);
+                setContactModal(true);
+                resetForm();
+            },
+            (error)=>{
+                console.log(error);
+                alert("Message Failed Due To Network Error");
+            }
+        );
+
+        return true;
+    }
+
+    function resetForm()
+    {
+        let ContactForm = document.querySelector(".contact-form");
+        ContactForm.reset();
+        // document.location.reload("#contact");
+        setFormValues(initialFormValues);
     }
 
     function formSubmit(event)
@@ -42,15 +75,21 @@ function ContactForm()
         
         if(formValidate(formValues) == true)
         {
-            event.reset();
+            console.log("Success");
+            let sendFormResult = sendForm();
+
+            console.log(contactModal);
         }
     }
 
-    return(
-        <Form className="contact-form" onSubmit={(event)=>formSubmit(event)}>
+    
 
-        <Row className="mb-md-2">
-            <Col md={6} className="mb-2 mb-md-0">
+    return(
+        <>
+        <Form ref={form} className="contact-form" onSubmit={(event)=>formSubmit(event)}>
+
+        <Row>
+            <Col md={6}>
                 <Form.Group>
                     <Form.Label htmlFor="user_first_name">First Name</Form.Label>
                     <Form.Control 
@@ -68,7 +107,7 @@ function ContactForm()
                 </Form.Group>
             </Col>
 
-            <Col md={6} className="mb-2 mb-md-0">
+            <Col md={6}>
                 <Form.Group>
                     <Form.Label htmlFor="user_last_name">Last Name</Form.Label>
                     <Form.Control
@@ -83,7 +122,7 @@ function ContactForm()
             </Col>
         </Row>
 
-        <Row className="mb-2">
+        <Row>
             <Col>
                 <Form.Group >
                     <Form.Label htmlFor="user_email">Email</Form.Label>
@@ -99,7 +138,7 @@ function ContactForm()
             </Col>
         </Row>
 
-        <Row className="mb-3">
+        <Row>
             <Col>
                 <Form.Group>
                     <Form.Label htmlFor="user_message">Message</Form.Label>
@@ -118,11 +157,18 @@ function ContactForm()
 
         <Row>
             <Col>
-                <Button type="submit" className="main-btn primary-btn w-100 submit-btn">Submit</Button>
+                <Button type="submit" className="main-btn primary-btn w-100 mt-3 submit-btn">Submit</Button>
             </Col>
         </Row>
 
-    </Form>        
+    </Form>
+
+    <ContactFormModal
+        show = {contactModal}
+        hide = {()=>{setContactModal(false)}}
+        personName = {`${formValues.firstName} ${formValues.lastName}`}
+    />
+    </>
     );
 }
 
