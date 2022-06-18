@@ -101,7 +101,7 @@ function lengthValidation(inputField, inputFieldName, inputFieldValue, minLength
 {
     if(inputFieldValue.length <= minLength)
     {
-        let errorMessage = `${inputFieldName} must be greater than ${minLength} characters`;
+        let errorMessage = `${inputFieldName} must be more than ${minLength} characters`;
         errorFunction(inputField, errorMessage);
         return false;
     }
@@ -121,7 +121,7 @@ function lengthValidation(inputField, inputFieldName, inputFieldValue, minLength
 //! Validation Name: Only Alphabets
 function alphabetsValidation(inputField, inputFieldName, inputFieldValue)
 {
-    let onlyAlphabetsExp = /^[A-Za-z]+$/;
+    let onlyAlphabetsExp = /^[A-Za-z ]+$/;
     if(onlyAlphabetsExp.test(inputFieldValue) == false)
     {
         let errorMessage = `${inputFieldName} must be only alphabets`;
