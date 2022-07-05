@@ -1,5 +1,6 @@
 import HAYTravels from '../assets/images/portfolio/hay-travels.png';
 import HostelsUnited from '../assets/images/portfolio/hostels-united.png';
+import MyPortfolio from '../assets/images/portfolio/my-portfolio.png';
 
 let WorkData = [
     {
@@ -20,6 +21,16 @@ let WorkData = [
         imageURL: HostelsUnited,
         githubURL: "https://github.com/m-ammadhassan/Hostels-United",
         hostURL: "https://hostels-united.web.app/"
+    },
+
+    {
+        id: 3,
+        projectName: "My Portfolio",
+        projectDetails: "Currently I am a front-end developer and my goal is to become MERN stack developer. I created my portfolio website which contains all my details. Other people can see about me, my skills, projects I have done and can also send me a message. I will use this website for professional development to get hired in a best software company and also to get freelancing projects. I will always update it gradually.",
+        projectTechnologies: ["HTML", "CSS", "JavaScript", "ReactJS", "Bootstrap"],
+        imageURL: MyPortfolio,
+        githubURL: "https://github.com/m-ammadhassan/Portfolio-Website-in-React",
+        hostURL: "https://ammad-hassan.web.app/"
     }
 ];
 
